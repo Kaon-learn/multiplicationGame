@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>掛け算ゲーム</title>
+    <link rel="stylesheet" href="multiplicationGame.css">
+</head>
+<body>
+    <h1>掛け算ゲーム</h1>
+    
+    <form name="form1">
+        <input type="radio" id="easy" name="difficulty" value="easy">
+        <label for="easy">かんたん</label>
+
+        <input type="radio" id="normal" name="difficulty" value="normal" checked>
+        <label for="normal">ふつう</label>
+    
+        <input type="radio" id="hard" name="difficulty" value="hard">
+        <label for="hard">むずかしい</label>
+    </form>
+
+    <p>
+        かんたんは1桁×1桁、<br>ふつうは2桁×2桁、<br>むずかしいは3桁×3桁です。<br>
+    </p>
+
+    <div>
+        <input type="button" id="start" value="出題">
+    </div>
+
+    <div id="question-area"></div>
+    <div id="answer-area"></div>
+    <div id="result-area"></div>
+
+    <script src="multiplicationGame.js"></script>
+</body>
+</html>
